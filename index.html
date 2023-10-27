@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin the Wheel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Custom Spin the Wheel</h2>
+
+  <!-- Input for categories -->
+  <div id="inputArea">
+    <input type="text" id="newCategory" placeholder="New category">
+    <button onclick="addCategory()">Add Category</button>
+  </div>
+
+  <!-- The Wheel -->
+  <div id="wheel">
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+  
+  <!-- Spin Button -->
+  <button id="spin" onclick="spinWheel()">SPIN</button>
+
+  <!-- Result -->
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
